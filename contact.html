@@ -7,124 +7,105 @@
 
     <!-- Bootstrap CDN Link -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous" />
     <!-- Core CSS Links -->
     <link rel="stylesheet" href="assest/style.css" />
   </head>
   <body>
     <div id="wrapper">
-      <!-- navbar start from here for mobile view -->
-      <nav
-        class="navbar mobile-nav navbar-expand-lg bg-light d-block d-md-none">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center gap-2">
-            <a href="index.html">
-              <img
-                src="assest/images/logo.png"
-                alt=""
-                class="mobile-nav-logo" />
-            </a>
-            <a class="navbar-brand" href="index.html">Sunflex India</a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tanks.html">Tanks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ras.html">RAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="biofloc.html">Biofloc</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ponds.html">Ponds</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shed.html">Shed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+      <!-- navbar start from here -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="assest/images/logo.jpeg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourbrands.html">Our Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </nav>
-      <!-- navbar ends here for mobile view -->
-      <!-- navbar start from here -->
-      <div
-        id="navbar"
-        class="d-md-block d-none"
-        style="background-image: url(assest/images/banner.jpeg)">
-        <nav>
-          <div class="nav-title">
-            <a href="index.html">
-              <img src="assest/images/logo.png" alt="" />
-            </a>
-            <a href="index.html">Sunflex India Co</a>
-          </div>
-          <ul class="nav-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tanks.html">Tanks</a></li>
-            <li><a href="ras.html">RAS</a></li>
-            <li><a href="biofloc.html">Biofloc</a></li>
-            <li><a href="ponds.html">Ponds</a></li>
-            <li><a href="shed.html">Shed</a></li>
-            <li><a href="contact.html">Contact </a></li>
-          </ul>
-          <ul class="nav-social">
-            <li>
-              <a href="">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/sunflex.india">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCmbd0ALwQ9KLBZhUyJ58tZg">
-                <i class="fa fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/sunflexindia">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
       <!-- navbar end from here -->
-      <!-- mobile banner image start -->
-      <div id="mobile-image">
-        <img src="assest/images/banner.jpeg" alt="" />
+
+      <!-- carousel start from here -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="assest/images/banner-1.avif"
+              alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assest/images/banner-2.avif"
+              alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assest/images/banner-3.jpg"
+              alt="Third slide" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <!-- mobile banner image done -->
+      <!-- carousel ends here -->
+
       <!-- contact us start from here -->
       <div id="contact-us">
         <h1>Contact Us</h1>
@@ -168,7 +149,7 @@
           </div>
           <div class="contact-us-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14017.547450430715!2d77.30387706937256!3d28.55814363558392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce525c6080fdb%3A0xae11839408b6b0c9!2sSunflex%20India!5e0!3m2!1sen!2sin!4v1709900049765!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14766.10783629149!2d114.172895!3d22.295902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400f23d55df3d%3A0x3c908118aa599fea!2sM%20SOLUTIONS%20CO!5e0!3m2!1sen!2sin!4v1710240302494!5m2!1sen!2sin"
               width="600"
               height="450"
               style="border: 0"
@@ -199,35 +180,34 @@
                 <i class="fa fa-instagram"></i>
               </a>
             </li>
+            <li>
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div id="contact-us-details-container">
-          <div class="contact-us-detail-box">
+          <div class="contact-us-detail-box" style="padding: 10px">
             <div>
               <i class="fa fa-location-dot"> </i>
               <p>
-                Corporate Office - C-5, Abul Fazal Enclave, Jamia Nagar, New
-                Friends Colony, New Delhi - 110025.
-              </p>
-              <p>
-                Registered Office - 57, Rashid Market, Khureji Khas, Krishna
-                Nagar, New Delhi - 110051
+                7th Floor, Flat I, Far East Mansion, 5-6 Middle road, Tsim Sha
+                Tsui, Kowloon, Hong Kong
               </p>
             </div>
           </div>
           <div class="contact-us-detail-box">
             <div>
               <i class="fa fa-envelope"></i>
-              <a href="mailto:sunflexindiaco@gmail.com"
-                >sunflexindiaco@gmail.com
-              </a>
+              <a href="mailto:sales@intl-ent.com">sales@intl-ent.com </a>
             </div>
           </div>
           <div class="contact-us-detail-box">
             <div>
               <i class="fa fa-phone"></i>
               <p>
-                <a href="tel:sunflexindiaco@gmail.com">+91-9971288837 </a>
+                <a href="tel:+85227217861">+852-27217861 </a>
               </p>
             </div>
           </div>
@@ -239,33 +219,44 @@
         <div id="footer-container">
           <div class="footer-box-1">
             <a href="index.html">
-              <img src="assest/images/logo.png" alt="" />
+              <img src="assest/images/logo.jpeg" alt="" />
             </a>
             <div id="footer-social-media-icons">
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/sunflex.india">
+                  <a href="">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.youtube.com/channel/UCmbd0ALwQ9KLBZhUyJ58tZg">
+                  <a href="">
                     <i class="fa fa-youtube"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/sunflexindia">
+                  <a href="">
                     <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-twitter"></i>
                   </a>
                 </li>
               </ul>
             </div>
             <p>
-              Sunflex is a leading brand in the aquaculture industry, in
-              supplying of aquaculture products. Sunflex india co. is selling
-              its products under the brand name “SUNFLEX’ which is a registered
-              name and trade mark of the company.
+              Welcome to International Enterprises, where integrity meets
+              innovation to seamlessly connect global markets through efficient
+              import-export solutions. Established in 1988, we've been at the
+              forefront of international trade, serving as a trusted partner for
+              businesses seeking reliable and tailored trade and logisitics
+              solutions.
             </p>
           </div>
           <div class="footer-box-2">
@@ -273,37 +264,37 @@
               <div class="footer-gallery">
                 <a href="">
                   <div class="overlay"></div>
-                  <img src="assest/images/ponds1.jpg" alt="" />
+                  <img src="assest/images/footer-perfume-img-1.avif" alt="" />
                 </a>
               </div>
               <div class="footer-gallery">
                 <a href="">
                   <div class="overlay"></div>
-                  <img src="assest/images/shed11.jpeg" alt="" />
+                  <img src="assest/images/footer-perfume-img-2.jpeg" alt="" />
                 </a>
               </div>
               <div class="footer-gallery">
                 <a href="">
                   <div class="overlay"></div>
-                  <img src="assest/images/bio7.jpg" alt="" />
+                  <img src="assest/images/footer-perfume-img-3.jpeg" alt="" />
                 </a>
               </div>
               <div class="footer-gallery">
                 <a href="">
                   <div class="overlay"></div>
-                  <img src="assest/images/ras3.png" alt="" />
+                  <img src="assest/images/footer-perfume-img-4.jpeg" alt="" />
                 </a>
               </div>
               <div class="footer-gallery">
                 <a href="">
                   <div class="overlay"></div>
-                  <img src="assest/images/global-fish-6.jpg" alt="" />
+                  <img src="assest/images/footer-perfume-img-5.jpeg" alt="" />
                 </a>
               </div>
               <div class="footer-gallery">
                 <a href="">
                   <div class="overlay"></div>
-                  <img src="assest/images/tanks11.jpeg" alt="" />
+                  <img src="assest/images/footer-perfume-img-6.jpeg" alt="" />
                 </a>
               </div>
             </div>
@@ -313,9 +304,8 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="tanks.html">Tanks</a></li>
-              <li><a href="ras.html">RAS</a></li>
-              <li><a href="biofloc.html">Biofloc</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="ourbrands.html">Our Brands</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -323,8 +313,7 @@
         <div class="line"></div>
         <p class="footer-company-name">
           Copyright ©2024-2025
-          <a href="http://sunflexindia.in/">sunflexindia.in</a> All Rights
-          Reserved.
+          <a href="">ie.in</a> All Rights Reserved.
         </p>
       </footer>
       <!-- Footer end from here -->
@@ -334,12 +323,16 @@
       crossorigin="anonymous"></script>
     <script src="assest/script.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
   </body>
 </html>

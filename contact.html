@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+
+    <!-- Bootstrap CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <!-- Core CSS Links -->
+    <link rel="stylesheet" href="assest/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- navbar start from here for mobile view -->
+      <nav
+        class="navbar mobile-nav navbar-expand-lg bg-light d-block d-md-none">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center gap-2">
+            <a href="index.html">
+              <img
+                src="assest/images/logo.png"
+                alt=""
+                class="mobile-nav-logo" />
+            </a>
+            <a class="navbar-brand" href="index.html">Sunflex India</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tanks.html">Tanks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ras.html">RAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="biofloc.html">Biofloc</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponds.html">Ponds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shed.html">Shed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar ends here for mobile view -->
+      <!-- navbar start from here -->
+      <div
+        id="navbar"
+        class="d-md-block d-none"
+        style="background-image: url(assest/images/banner.jpeg)">
+        <nav>
+          <div class="nav-title">
+            <a href="index.html">
+              <img src="assest/images/logo.png" alt="" />
+            </a>
+            <a href="index.html">Sunflex India Co</a>
+          </div>
+          <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tanks.html">Tanks</a></li>
+            <li><a href="ras.html">RAS</a></li>
+            <li><a href="biofloc.html">Biofloc</a></li>
+            <li><a href="ponds.html">Ponds</a></li>
+            <li><a href="shed.html">Shed</a></li>
+            <li><a href="contact.html">Contact </a></li>
+          </ul>
+          <ul class="nav-social">
+            <li>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sunflex.india">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCmbd0ALwQ9KLBZhUyJ58tZg">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sunflexindia">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- navbar end from here -->
+      <!-- mobile banner image start -->
+      <div id="mobile-image">
+        <img src="assest/images/banner.jpeg" alt="" />
+      </div>
+      <!-- mobile banner image done -->
+      <!-- contact us start from here -->
+      <div id="contact-us">
+        <h1>Contact Us</h1>
+        <div class="contact-us-container">
+          <div class="contact-us-form">
+            <form action="">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Your Name" />
+              </div>
+              <div>
+                <label for="number">Phone Number</label>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  placeholder="Enter Your Phone Number" />
+              </div>
+              <div>
+                <label for="email">Emails</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Your Email" />
+              </div>
+              <div>
+                <label for="message">Messages</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"></textarea>
+              </div>
+              <button type="submit" class="read-more-btn">Submit</button>
+            </form>
+          </div>
+          <div class="contact-us-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14017.547450430715!2d77.30387706937256!3d28.55814363558392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce525c6080fdb%3A0xae11839408b6b0c9!2sSunflex%20India!5e0!3m2!1sen!2sin!4v1709900049765!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div id="social-media-icons">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="contact-us-details-container">
+          <div class="contact-us-detail-box">
+            <div>
+              <i class="fa fa-location-dot"> </i>
+              <p>
+                Corporate Office - C-5, Abul Fazal Enclave, Jamia Nagar, New
+                Friends Colony, New Delhi - 110025.
+              </p>
+              <p>
+                Registered Office - 57, Rashid Market, Khureji Khas, Krishna
+                Nagar, New Delhi - 110051
+              </p>
+            </div>
+          </div>
+          <div class="contact-us-detail-box">
+            <div>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:sunflexindiaco@gmail.com"
+                >sunflexindiaco@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="contact-us-detail-box">
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>
+                <a href="tel:sunflexindiaco@gmail.com">+91-9971288837 </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact us ends here -->
+      <!-- Footer start from here -->
+      <footer>
+        <div id="footer-container">
+          <div class="footer-box-1">
+            <a href="index.html">
+              <img src="assest/images/logo.png" alt="" />
+            </a>
+            <div id="footer-social-media-icons">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/sunflex.india">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCmbd0ALwQ9KLBZhUyJ58tZg">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/sunflexindia">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p>
+              Sunflex is a leading brand in the aquaculture industry, in
+              supplying of aquaculture products. Sunflex india co. is selling
+              its products under the brand name “SUNFLEX’ which is a registered
+              name and trade mark of the company.
+            </p>
+          </div>
+          <div class="footer-box-2">
+            <div class="footer-gallery-images">
+              <div class="footer-gallery">
+                <a href="">
+                  <div class="overlay"></div>
+                  <img src="assest/images/ponds1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="footer-gallery">
+                <a href="">
+                  <div class="overlay"></div>
+                  <img src="assest/images/shed11.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="footer-gallery">
+                <a href="">
+                  <div class="overlay"></div>
+                  <img src="assest/images/bio7.jpg" alt="" />
+                </a>
+              </div>
+              <div class="footer-gallery">
+                <a href="">
+                  <div class="overlay"></div>
+                  <img src="assest/images/ras3.png" alt="" />
+                </a>
+              </div>
+              <div class="footer-gallery">
+                <a href="">
+                  <div class="overlay"></div>
+                  <img src="assest/images/global-fish-6.jpg" alt="" />
+                </a>
+              </div>
+              <div class="footer-gallery">
+                <a href="">
+                  <div class="overlay"></div>
+                  <img src="assest/images/tanks11.jpeg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-box-3">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="tanks.html">Tanks</a></li>
+              <li><a href="ras.html">RAS</a></li>
+              <li><a href="biofloc.html">Biofloc</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="line"></div>
+        <p class="footer-company-name">
+          Copyright ©2024-2025
+          <a href="http://sunflexindia.in/">sunflexindia.in</a> All Rights
+          Reserved.
+        </p>
+      </footer>
+      <!-- Footer end from here -->
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f50fdb34c0.js"
+      crossorigin="anonymous"></script>
+    <script src="assest/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

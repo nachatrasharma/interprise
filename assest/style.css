@@ -1478,4 +1478,8 @@ footer {
     padding-bottom: 10px;
     font-size: 2rem;
   }
+
+  .btn-home button {
+    width: 100%;
+  }
 }

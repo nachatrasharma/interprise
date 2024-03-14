@@ -61,43 +61,47 @@
 }
 /* navbar start */
 
-/* #navbar {
-  background-image: url("http://sunflexindia.in/banner4.jpeg");
-  width: 100%;
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  object-fit: contain;
-} */
-
 nav {
-  width: 90%;
-  margin: auto;
-  /* position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: #ffffffbf;
-  border-radius: 15px;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 2px 50px;
-  align-items: center;
-  top: 30px; */
+  width: 100%;
+  box-shadow: 0px 1px 10px 2px #ddd0d0;
+  margin-bottom: 10px;
+}
+
+.nav-brand {
+  width: 10%;
 }
 
 .navbar-brand img {
-  width: 65px;
+  width: 50px;
 }
 
 .navbar-collapse {
-  justify-content: space-around;
+  width: 70%;
+  justify-content: center;
+}
+
+#navbar-social-media-icons {
+  width: 20%;
+}
+
+#navbar-social-media-icons ul {
+  margin-bottom: 0px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  padding-left: 0px;
+}
+
+#navbar-social-media-icons ul li a i {
+  font-size: 1.1rem;
+  color: #000000ad;
 }
 
 .navbar-nav {
   gap: 35px;
+  width: 100%;
+  justify-content: center;
 }
 
 .nav-title {
@@ -126,31 +130,13 @@ nav {
   list-style: none;
 }
 
-.nav-items li a {
-  font-size: 09rem;
+.navbar-nav .nav-items .nav-link {
+  font-size: 0.9rem;
   font-weight: 500;
-  color: #000;
+  color: #000 !important;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 1px;
-}
-
-.nav-social {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-social li {
-  list-style-type: none;
-  transition: all 0.3s ease;
-}
-
-.nav-social li:hover {
-  transform: translateY(-10px) scale(0.95);
-}
-
-.nav-social li i {
-  color: #000;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -741,6 +727,29 @@ ul {
   color: #1f1e1e;
 }
 
+.container {
+  overflow: hidden;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  margin: 0 10px;
+  animation: moveCard 5s linear infinite;
+}
+
+@keyframes moveCard {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* our brands start from here*/
 
 #our-brands {
@@ -750,6 +759,7 @@ ul {
 
 #our-brands h1 {
   padding-bottom: 30px;
+  font-family: cursive;
   text-align: center;
 }
 
@@ -762,9 +772,14 @@ ul {
 
 .our-brands-box {
   width: 30%;
+  border-radius: 11px;
   height: 250px;
   box-shadow: 0px 0px 10px 0px #e7dfdf;
   margin-bottom: 30px;
+}
+
+.our-brands-box:hover {
+  box-shadow: 0px 0px 10px 0px #bbb3b3;
 }
 
 .our-brands-box img {
@@ -786,6 +801,7 @@ ul {
 #our-product h1 {
   padding-bottom: 30px;
   text-align: center;
+  font-family: cursive;
 }
 
 .our-product-container {
@@ -810,6 +826,10 @@ ul {
   margin-bottom: 30px;
 }
 
+.our-product-box:hover {
+  box-shadow: 0px 0px 10px 0px #bbb3b3;
+}
+
 .our-product-box button {
   cursor: pointer;
   width: 100%;
@@ -825,7 +845,7 @@ ul {
 
 .our-product-text h4 {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .our-product-box img {
@@ -849,13 +869,17 @@ ul {
 
 .btn-home button {
   cursor: pointer;
-  width: 50%;
+  width: 25%;
+  border: none;
+  letter-spacing: 1px;
   outline: none;
   color: white;
+  font-weight: bold;
   padding: 10px 0px;
-  background: #202020c7;
-  border: 1px solid white;
+  background: #000;
   transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  border-radius: 21px;
 }
 
 .btn-home button:hover {
@@ -884,9 +908,10 @@ ul {
 /* Footer Start Here */
 
 footer {
-  background-color: #ccc4c4;
+  background-color: #fff;
   margin: auto;
   padding: 50px 0px;
+  box-shadow: 0px 1px 9px 1px #d5c8c8;
 }
 
 #footer-container {
@@ -925,7 +950,7 @@ footer {
   text-align: justify;
   width: 80%;
   line-height: 1.5rem;
-  color: #000000;
+  color: #2d2b2b;
 }
 
 .footer-box-2 {
@@ -940,8 +965,8 @@ footer {
 }
 
 .footer-gallery {
-  width: 132px;
-  height: 95px;
+  width: 120px;
+  height: 120px;
   position: relative;
   transition: opacity 0.3s ease;
 }
@@ -983,31 +1008,31 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: -65px;
+  margin-left: -36px;
 }
 
 .footer-box-3 ul li a {
   text-decoration: none;
-  color: #000000;
-  font-size: 0.9rem;
+  color: #393636;
+  font-size: 0.85rem;
 }
 
 .line {
   width: 90%;
   margin: 20px auto;
-  height: 2px;
+  height: 1px;
   background-color: #000000;
 }
 
 .footer-company-name {
-  font-size: 0.9rem;
   text-align: center;
   color: #000000;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
 
 .footer-company-name a {
   text-decoration: none;
-  font-size: 1.1rem;
   color: black;
 }
 
@@ -1041,6 +1066,18 @@ footer {
 }
 
 /* responsive web design */
+
+.about-us-container {
+  align-items: center;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-us-main-box {
+  width: 47%;
+}
 
 @media screen and (max-width: 900px) {
   .mobile-nav {
@@ -1448,7 +1485,7 @@ footer {
   }
 
   #about-us h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .our-brands-box {
@@ -1480,6 +1517,18 @@ footer {
   }
 
   .btn-home button {
+    width: 100%;
+  }
+
+  .about-us-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-us-main-box {
+    width: 100%;
+  }
+
+  .about-us-main-box img {
     width: 100%;
   }
 }
